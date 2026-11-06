@@ -1,0 +1,7 @@
+# el ejecutable va en Releases, no en el código
+*.exe
+*.pdb
+salida*.png
+salida*.jpg
+salida*_log.txt
+icono/*.ai
