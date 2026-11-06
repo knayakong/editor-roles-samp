@@ -14,6 +14,13 @@ Abrí la captura, importá el chat y exportá. Todo con el mouse.</p>
 1. Entrá a **[Releases](../../releases/latest)** y bajá `EditorRoles.exe` (un solo archivo, ~150 KB).
 2. Doble clic. **No se instala nada.**
 
+> 🔏 **El `.exe` lo compila GitHub, no la PC de nadie**: cada versión se arma en las máquinas de GitHub a partir de
+> este código (ver [`.github/workflows/compilar.yml`](.github/workflows/compilar.yml)) y lleva un **sello de origen**
+> verificable. Para comprobarlo, con la herramienta [`gh`](https://cli.github.com):
+> ```
+> gh attestation verify EditorRoles.exe --repo knayakong/editor-roles-samp
+> ```
+
 > **¿Windows dice «Windows protegió su PC»?** Es porque el programa no tiene una firma digital paga, no porque tenga
 > algo malo. Tocá **Más información → Ejecutar de todas formas**, o: clic derecho en el `.exe` → **Propiedades** →
 > marcar **Desbloquear** → Aceptar. Si desconfiás, el código completo está acá y lo podés compilar vos mismo
